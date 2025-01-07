@@ -146,7 +146,7 @@ class AssemblyHandler:
         elif parts[0] == "J":
             # Jump to a specified position in the command list
             self.short_term["P"] += int(parts[1])
-        elif parts[0] == "JMPR":
+        elif parts[0] == "JR":
             # Jump to a position relative to the current position
             self.short_term["P"] += self.short_term[parts[1]]
         elif parts[0] == "JZ":
