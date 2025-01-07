@@ -143,7 +143,7 @@ class AssemblyHandler:
                     self.error = True
                     print("I'm afraid I can't do that")
                     return
-        elif parts[0] == "JMP":
+        elif parts[0] == "J":
             # Jump to a specified position in the command list
             self.short_term["P"] += int(parts[1])
         elif parts[0] == "JMPR":
