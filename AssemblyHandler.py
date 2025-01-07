@@ -18,7 +18,7 @@ The interpreter supports the following commands:
 - STORE: Store the value of a register into memory using the value stored in register A as the memory address.
 - MOVE: Move the value from one register to another.
 - Arithmetic Operations: ADDI, ADD, SUB, MUL, DIV for addition, subtraction, multiplication, and division.
-- Jump Instructions: JMP, JMPR, JZ, JLT for unconditional and conditional jumps.
+- Jump Instructions: J, JR, JZ, JLT for unconditional and conditional jumps.
 - PRINT: Print the value stored in a register.
 
 The interpreter ensures proper error handling for memory access violations, arithmetic overflow, and division by zero.
