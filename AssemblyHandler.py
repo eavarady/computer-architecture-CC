@@ -157,7 +157,11 @@ class AssemblyHandler:
             # Jump to a specified position if one register's value is less than another
             if self.short_term[parts[1]] < self.short_term[parts[2]]:
                 self.short_term["P"] += int(parts[3])
-
+        elif parts[0] == "HALT":
+            # Halt the execution
+            self.error = True
+            print("Execution halted")
+            return
         elif parts[0] == "PRINT":
             # Print the value stored in a register
             print(self.short_term[parts[1]])
